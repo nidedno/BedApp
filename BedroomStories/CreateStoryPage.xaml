@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BedroomStories.CreateStoryPage"
+             Title="Define your story">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" Padding="10">
+            
+            <Entry x:Name="ChildName" Placeholder="Child Name" HorizontalOptions="FillAndExpand" TextColor="WhiteSmoke" PlaceholderColor="#A77632"/>
+            <Entry x:Name="Language" Placeholder="Language" HorizontalOptions="FillAndExpand" TextColor="WhiteSmoke" PlaceholderColor="#A77632"/>
+            <Entry x:Name="ChildAge" Placeholder="Child Age" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="WhiteSmoke" PlaceholderColor="#A77632"/>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Gender" VerticalOptions="Center" TextColor="#A77632"/>
+                <Picker x:Name="GenderPicker" HorizontalOptions="FillAndExpand" TextColor="WhiteSmoke">
+                    <Picker.Items >
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <Entry x:Name="StoryPlace" Placeholder="Where does the story play?" HorizontalOptions="FillAndExpand" TextColor="WhiteSmoke" PlaceholderColor="#A77632"/>
+
+            <Button Text="Dream Up Story" TextTransform="None" Clicked="OnDreamUpStoryClicked" FontSize="Large" HorizontalOptions="FillAndExpand" Margin="50,10,50,5" BackgroundColor="#cf8240" TextColor="WhiteSmoke" CornerRadius="20"/>
+
+            <ActivityIndicator x:Name="ActivityIndicator" IsRunning="False" IsVisible="False" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

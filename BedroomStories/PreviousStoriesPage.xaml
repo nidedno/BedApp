@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="My stories"
+             x:Class="BedroomStories.PreviousStoriesPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" Padding="10"  BackgroundColor="#121c29">
+            <ListView x:Name="StoriesListView" VerticalOptions="FillAndExpand" HasUnevenRows="True">
+                <!-- Define the item template for the list view -->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"  
+                               OutlineColor="#F4A12C"
+                               Padding="10" BackgroundColor="#2D2A38" Margin="0,0,0,10">
+                                <StackLayout Orientation="Vertical" Padding="0" BackgroundColor="#2D2A38" >
+                                    <Label Text="{Binding Title}" FontSize="Medium" FontAttributes="Bold" TextColor="#F4A12C"/>
+                                    <Label Text="{Binding Date}" FontSize="Small" TextColor="#A77632"/>
+                                    <Label Text="{Binding Preview}" FontSize="Small" TextColor="White"/>
+                                    <Button Text="Read Again" Command="{Binding ReadAgainCommand}" HorizontalOptions="End" Background="Transparent" TextColor="#F4A12C"/>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

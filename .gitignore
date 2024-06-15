@@ -1,0 +1,75 @@
+
+### .gitignore
+
+```plaintext
+# Xamarin
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.userprefs
+*.user
+*.suo
+*.csproj.user
+
+# Mono auto generated files
+mono_crash.*
+
+# Xamarin Mac build files
+*.app
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcut files
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS generated files #
+########################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Backup files
+*.bak
+*.old
+*.orig
+*.restore
+
+# Project specific
+.vscode/

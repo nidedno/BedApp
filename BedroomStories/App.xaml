@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BedroomStories.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#121c29"/>
+                <Setter Property="BackgroundColor" Value="#121c29"></Setter>
+                <Setter Property="BarTextColor" Value="#F4A12C"/>
+            </Style>
+
+            <Style TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="#121c29"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BedroomStories.MainPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+                <!-- Center Image -->
+                <Image Source="AnimeBackground.jpg" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="300" WidthRequest="300"/>
+
+                <!-- Title -->
+                <Label Text="Bedroom Stories" FontSize="Title" HorizontalOptions="Center" Margin="0,10,0,5" TextColor="#F4A12C"/>
+
+                <!-- Subtitle -->
+                <Label Text="Create magical and unique stories for your child based on their favourite characters. Every night is a new story." HorizontalOptions="Center" TextColor="#b9b7b9" Padding="10" HorizontalTextAlignment="Center"/>
+
+                <!-- Buttons -->
+                <Button Text="Create Story" TextTransform="None" FontSize="Large"  FontAttributes ="None" BackgroundColor="#cf8240" TextColor="WhiteSmoke" CornerRadius="20" Clicked="OnCreateStoryClicked" HorizontalOptions="FillAndExpand"  Margin="50,10,50,5"/>
+                <Button Text="View Previous Stories" TextTransform="None" Clicked="OnViewPreviousStoriesClicked" FontSize="Large" HorizontalOptions="FillAndExpand" Margin="50,10,50,5" BackgroundColor="#cf8240" TextColor="WhiteSmoke" CornerRadius="20"/>
+                <Button Text="About Us" Clicked="OnAboutUsClicked" FontSize="Small" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" BackgroundColor="Transparent" TextColor="#b9b7b9"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
